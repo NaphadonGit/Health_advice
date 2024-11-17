@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BMI Calculator</title>
+    <link rel="stylesheet" href="BMI.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>BMI Calculator</h1>
+        <nav>
+            <a href="index.html">หน้าแรก</a>
+            <a href="nutrition.html">โภชนาการ</a>
+            <a href="exercise.html">ออกกำลังกาย</a>
+            <a href="mental-health.html">สุขภาพจิต</a>
+            <a href="BMI.html">คำนวณ BMI</a>
+        </nav>
+    </header>
+
+    <main>
+        <div class="container">
+            <h2>คำนวณค่า BMI ของคุณ</h2>
+            <div class="input-group">
+                <label for="weight">น้ำหนัก (กก.):</label>
+                <input type="number" id="weight" placeholder="กรอกน้ำหนักของคุณ">
+            </div>
+            <div class="input-group">
+                <label for="height">ส่วนสูง (ซม.):</label>
+                <input type="number" id="height" placeholder="กรอกส่วนสูงของคุณ">
+            </div>
+            <button onclick="calculateBMI()">คำนวณ BMI</button>
+            <div class="result">
+                <h2>BMI ของคุณ: <span id="bmi-result"></span></h2>
+                <p id="bmi-message"></p>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 เว็บไซต์สุขภาพ By Naphadon Phokabut</p>
+    </footer>
+
+    <script src="BMI.js"></script>
+</body>
+</html>
